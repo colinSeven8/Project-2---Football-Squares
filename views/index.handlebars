@@ -1,0 +1,95 @@
+<div id="home">
+  <br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Welcome to NFL Pick'Em Squares!</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 img-container">
+        <img class="indeximage" src="/images/nfl-1-logo-png-transparent.png" alt="NFL Logo">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12">
+          <button id="signUp" class="btn btn-danger float-right logged-out" style="display:block" data-toggle="modal"
+            data-target="#modalSignUp">Sign Up</button>
+          <button id="logIn" class="btn btn-danger float-right logged-out" style="display:block" data-toggle="modal"
+            data-target="#modalLogIn">Log In</button>
+          <button id="viewTeams" class="btn btn-danger float-right logged-in" style="display:none">View This Weeks
+            Games</button>
+          <button id="viewGames" class="btn btn-danger float-right logged-in" style="display:none">View Your
+            Games</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Various Modals for User Authentication-->
+​
+<!-- Modal for Signing Up -->
+
+<div class="modal fade" id="modalSignUp">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header -->
+      <div class="modal-header">
+        <H4 class="modal-title">SIGN UP</H4>
+        <button type="button" class="close" data-dismiss="modal"></button>
+      </div>
+      <!-- body -->
+      <div class="modal-header">
+        <form role="form" id="signUpForm">
+          <div class="form-group">
+            <input id="signUpFirstName" type="text" class="form-control" placeholder="First Name" />
+            <input id="signUpLastName" type="text" class="form-control" placeholder="Last Name" />
+            <input id="signUpEmail" type="email" class="form-control" placeholder="Email" />
+            <input id="signUpPassword" type="password" class="form-control" placeholder="Password" />
+          </div>
+        </form>
+      </div>
+      <!-- footer -->
+      <div class="modal-footer">
+        <button type='submit' id='submitSignUp' class="btn btn-dark btn-block">Sign Up</button>
+      </div>
+      ​
+    </div>
+  </div>
+</div>
+
+
+<!-- Modal for Logging In -->
+
+<div class="modal fade" id="modalLogIn">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <!-- header -->
+      <div class="modal-header">
+        <H4 class="modal-title">LOGIN</H4>
+        <button type="button" class="close" data-dismiss="modal"></button>
+        ​
+      </div>
+      <!-- body -->
+      <div class="modal-header">
+        <form role="form" id="logInForm">
+          <div class="form-group">
+            <!-- <input id="login-displayname" type="text" class="form-control" placeholder="Display Name" /> -->
+            <input id="logInEmail" type="email" class="form-control" placeholder="Email" />
+            <input id="logInPassword" type="password" class="form-control" placeholder="Password" />
+          </div>
+        </form>
+      </div>
+      <!-- footer -->
+      <div class="modal-footer">
+        <button type='submit' id='logInSubmit' class="btn btn-dark btn-block">Log In</button>
+      </div>
+      ​
+    </div>
+  </div>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="/js/index.js"></script>
